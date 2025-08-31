@@ -1,7 +1,7 @@
 #  Vidsage – Smart YouTube Video Assistant
 
-![Alt Text](assets/Img1.png)
 ![Alt Text](assets/Img2.png)
+![Alt Text](assets/Img1.png)
 
 Vidsage is an AI-powered tool made through LangChain that allows you to extract transcripts from YouTube videos, split them into chunks, embed them using Google Generative AI embeddings, and store them in a FAISS vector database.
 You can then ask natural language questions about the video, and Vidsage retrieves the most relevant context and provides concise, accurate answers.
