@@ -11,7 +11,7 @@ import re
 from dotenv import load_dotenv
 
 # Load env variables
-api_key = st.secrets["OPENAI_API_KEY"]
+api_key = st.secrets["GOOGLE_API_KEY"]
 
 
 # Streamlit Config
