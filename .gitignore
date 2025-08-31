@@ -1,2 +1,2 @@
 myvenv
-.env
+.streamlit/secrets.toml
