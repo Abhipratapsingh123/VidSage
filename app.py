@@ -120,10 +120,9 @@ if st.session_state.retriever:
                 template="""You are a helpful assistant.
                 Always answer strictly based on the provided transcript context.  
 
-                - Detect the language of the user’s question (Hindi, English or mixed) and reply in the same language and tone.  
-                - Do not translate unless the user specifically asks.  
+                - Detect the language of the user’s question (Hindi, English or mixed) and reply in the same language and tone.    
                 - If the transcript does not have enough information, then make the output better by adding proper and updated information from your side"  
-                - If the question asked from the user's side is completely out of the context then say I don't know.  
+                - If the question asked from the user's side is completely out of the context then you are allowed to say,that the transcript doesnot has this topic but I can answer you, then you answer the question until it is appropriate to answer.  
                 - If the user asks something you cannot do, respond with: "I can't help you with this."  
 
                 Context:
