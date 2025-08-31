@@ -27,3 +27,4 @@ scikit-learn
 
 youtube-transcript-api
 langchain_community
+faiss-cpu
