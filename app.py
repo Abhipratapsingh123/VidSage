@@ -11,7 +11,8 @@ import re
 from dotenv import load_dotenv
 
 # Load env variables
-load_dotenv()
+api_key = st.secrets["OPENAI_API_KEY"]
+
 
 # Streamlit Config
 
@@ -62,7 +63,8 @@ with st.container():
 
                     # Step 1c: Embeddings + Vector Store
                     embeddings = GoogleGenerativeAIEmbeddings(
-                        model="models/embedding-001"
+                        model="models/embedding-001",
+                        google_api_key=api_key
                     )
                     vector_store = FAISS.from_documents(chunks, embeddings)
 
@@ -109,7 +111,10 @@ if st.session_state.retriever:
 
         with st.spinner("Thinking..."):
 
-            model = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
+            model = ChatGoogleGenerativeAI(
+                model="gemini-2.5-flash",
+                google_api_key=api_key
+                )
 
             prompt = PromptTemplate(
                 template="""You are a helpful assistant.
