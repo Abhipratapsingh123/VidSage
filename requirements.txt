@@ -3,8 +3,6 @@ streamlit
 # LangChain Core
 langchain==0.3.27
 langchain-core==0.3.75
-langchain-text-splitters==0.3.2
-
 
 # Google Gemini (PaLM) Integration
 langchain-google-genai==2.1.10
