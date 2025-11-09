@@ -1,8 +1,9 @@
 streamlit
 
 # LangChain Core
-langchain==0.1.16
-langchain-core==0.1.52
+langchain==0.3.27
+langchain-core==0.3.75
+
 
 # Google Gemini (PaLM) Integration
 langchain-google-genai==2.1.10
@@ -22,7 +23,7 @@ numpy
 scikit-learn
 
 youtube-transcript-api
-langchain_community==0.0.35
+langchain_community
 faiss-cpu
 
 
