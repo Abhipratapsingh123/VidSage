@@ -17,6 +17,7 @@ google-generativeai
 langchain-huggingface
 transformers
 huggingface-hub
+sentence-transformers
 
 # Environment Variable Management
 python-dotenv
@@ -28,3 +29,6 @@ scikit-learn
 youtube-transcript-api
 langchain_community
 faiss-cpu
+
+
+

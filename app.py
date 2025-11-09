@@ -2,6 +2,7 @@ import streamlit as st
 from youtube_transcript_api import YouTubeTranscriptApi, TranscriptsDisabled
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_core.prompts import PromptTemplate
 from langchain_core.runnables import RunnableParallel, RunnablePassthrough, RunnableLambda
@@ -62,10 +63,8 @@ with st.container():
                     chunks = splitter.create_documents([transcript])
 
                     # Step 1c: Embeddings + Vector Store
-                    embeddings = GoogleGenerativeAIEmbeddings(
-                        model="models/embedding-001",
-                        google_api_key=api_key
-                    )
+                    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+                    
                     vector_store = FAISS.from_documents(chunks, embeddings)
 
                     # Store in session state
