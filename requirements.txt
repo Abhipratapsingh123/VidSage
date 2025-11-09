@@ -6,7 +6,7 @@ langchain-core==0.3.75
 
 
 # Google Gemini (PaLM) Integration
-langchain-google-genai
+langchain-google-genai==2.2.0
 google-generativeai
 
 # Hugging Face Integration
