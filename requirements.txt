@@ -7,7 +7,7 @@ langchain-core==0.2.35
 
 # Google Gemini (PaLM) Integration
 langchain-google-genai==2.0.5
-google-generativeai
+# google-generativeai
 
 # Hugging Face Integration
 langchain-huggingface
@@ -18,9 +18,6 @@ sentence-transformers
 # Environment Variable Management
 python-dotenv
 
-# Machine Learning Utilities
-numpy
-scikit-learn
 
 youtube-transcript-api
 langchain_community==0.2.12
