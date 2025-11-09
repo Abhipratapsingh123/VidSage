@@ -1,16 +1,11 @@
+streamlit
+
 # LangChain Core
-langchain
-langchain-core
-
-# OpenAI Integration
-langchain-openai
-openai
-
-# Anthropic Integration
-langchain-anthropic
+langchain==0.3.27
+langchain-core==0.3.75
 
 # Google Gemini (PaLM) Integration
-langchain-google-genai
+langchain-google-genai==2.1.10
 google-generativeai
 
 # Hugging Face Integration
